@@ -2,19 +2,39 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500&family=Source+Sans+Pro&display=swap');
 
+/* common styles or utilities  */
 body{
     font-family: 'Lobster', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24;
+    margin-top: 3px;
+}
+.container{
+    background-color: #FFFFFF;
+     width: 870px;
+     padding:30px
 
 }
 
 
+
 /* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
@@ -23,4 +43,12 @@ background-color: #F3F1FF;
 .player img{
 width: 56px;
 height: 56px;
+}
+.player-name{
+    padding-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+
 }
